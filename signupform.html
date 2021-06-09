@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>VTie-In|Sign-up</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="signupformstyle.css">
+</head>
+<body>
+    <div class="container"> 
+    <div class="row">
+        <div class="col md-6">
+            <img src="WhatsApp Image 2021-06-09 at 12.42.16 PM.jpeg" class="img-responsive" height="500px" width="500px">
+        </div>
+        <div class="col md-6">
+            <div class="details">
+                <h1>Create your Account</h1>
+                <br>
+                <form class="needs-validation">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="firstname" placeholder="Firstname" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="lastname" placeholder="Lastname" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control" id="Age" placeholder="Age" min="19" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" id="Gender">
+                            <option style="display: none;">Gender</option>
+                            <option value="Doctor" >Female</option>
+                            <option value="Student">Male</option>
+                            <option value="other">Others</option>
+                        </select>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" id="profession">
+                            <option style="display: none;">Profession</option>
+                            <option value="Doctor" onclick=myfunc()>Doctor</option>
+                            <option value="Student">Student</option>
+                            <option value="other">Others</option>
+                        </select>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-control" id="PhoneNumber" placeholder="PhoneNumber" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" id="Address" placeholder="Address" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" required>I agree to <a href="#">Terms and conditions</a>
+                        </label>
+                    </div>
+                    <br>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Sign-up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
